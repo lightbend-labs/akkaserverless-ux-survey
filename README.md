@@ -6,7 +6,7 @@ NOTE: If you’re participating in our User Experience study, please jump to [Us
 
 ## Exercises for those not participating in the User Experience study. 
 
-We've provided three main exercises, but we realize that it is possible that some will not be able to complete all three. We are interested in your feedback regardless of how far you get. Please answer our [https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu](short survey) when you are done.
+We've provided three main exercises, but we realize that it is possible that some will not be able to complete all three. We are interested in your feedback regardless of how far you get. Please answer our [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu) when you are done.
 
 ### Exercise One 
 *Try out the Akka Serverless console*
@@ -56,7 +56,7 @@ Imagine that you have transferred to ACME Wireless, the parent company of ACME S
 
 3. Modify the example. The `AssignRoom` rpc method returns an empty response. Change it to return the incoming message. 
 
-Thank you, please do not forget to fill out the [https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu](short survey).
+Thank you, please do not forget to fill out the [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu).
 
 
 ## User Experience Participant Exercises
@@ -81,4 +81,4 @@ Imagine that you are a JavaScript developer joining the team that created the sh
 
 Note: We know that we have limited time, so you will likely not finish during the screen share.
 
-If you have time and the desire, feel free to try [Exercise Two](#exercise-two) and [Exercise Three](#exercise-three). If you are able to work with Akka Serverless more, please  fill out the [https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu](short survey).
+If you have time and the desire, feel free to try [Exercise Two](#exercise-two) and [Exercise Three](#exercise-three). If you are able to work with Akka Serverless more, please  fill out the [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu).
