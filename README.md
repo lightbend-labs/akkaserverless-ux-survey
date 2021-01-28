@@ -1,6 +1,6 @@
 # Akka Serverless Beta Exercises
 
-Thank you for participating in the Akka Serverless Closed Beta! We want Akka Serverless to be easy to learn and use. We realize your time is valuable so to get the most out of Akka Serverless we’ve created some “_Getting Started Exercises._” 
+Thank you for participating in the Akka Serverless Closed Beta! We want Akka Serverless to be easy to learn and use. We realize that your time is valuable. To help you get the most out of working with Akka Serverless, we’ve created some “_Getting Started Exercises._” 
 
 NOTE: If you’re participating in our User Experience study, please jump to [User Experience Participant Exercises](#user-experience-participant-exercises)
 
