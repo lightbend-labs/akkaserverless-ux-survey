@@ -33,7 +33,7 @@ As a developer working for ACME Sunglasses, your team has built a different shop
 
 1. Install the CLI as described at: https://developer.lightbend.com/docs/akka-serverless/getting-started/set-up-development-env.html.
 2. Using the previous project, deploy the new service from this container image on Docker Hub: https://hub.docker.com/r/retgits/acmesunglasses-warehouse/tags?page=1&ordering=last_updated, make sure that the service will be exposed for internet access and enable Cross-Origin Resource Sharing(CORS).
-3. Update the container with a new version from this container image: <please add link to image 2> 
+3. Update the container with a new version from this container image: `docker.io/retgits/acmesunglasses-warehouse:2.0.0` 
 4. Add environment variables.
 4. Check whether the service has started.
 5. View the log.
