@@ -63,7 +63,8 @@ Thank you, please do not forget to fill out the [short survey](https://lightbend
 
 Our team will walk you through these exercises. Feel free to think out loud and so that we see your first impression. Remember we are testing Akka Serverless, not you, so any problem you encounter is welcome and valuable to us.
 
-### Exercise - Working with projects and services
+### Exercise A 
+*Working with projects and services*
 
 An Akka Serverless project is a collection of services and configuration that comprise your application. Each Akka Serverless project runs in its own Kubernetes namespace. Projects support team collaboration: Multiple people can work on a single project, and each person can be a member of many projects.
 
@@ -75,7 +76,8 @@ For your first task, log in to Akka Serverless. You will need to create an accou
 3. Your newly invited colleague has created a new version of the shopping cart and published it at: https://hub.docker.com/r/retgits/acmesunglasses-warehouse/tags?page=1&ordering=last_updated. Redeploy the service and add an environment variable to it.
 4. Suppose that your company decides to use a private Docker Hub account to store container images. How would you go about making sure you can deploy a container from a private registry?
 
-### Exercise - Learning about development
+### Exercise B
+*Learning about development*
 
 Imagine that you are a JavaScript developer joining the team that created the shopping cart. The team has documented how they created the service. Follow their directions: [https://docs.lbcs.dev/tutorial/shopping-cart-node.html](https://docs.lbcs.dev/tutorial/shopping-cart-node.html)
 
