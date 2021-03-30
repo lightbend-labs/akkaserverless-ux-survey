@@ -1,86 +1,49 @@
 # Akka Serverless Beta Exercises
 
-Thank you for participating in the Akka Serverless Closed Beta! We want Akka Serverless to be easy to learn and use. We realize that your time is valuable. To help you get the most out of working with Akka Serverless, we’ve created some “_Getting Started Exercises._” 
-
-NOTE: If you’re participating in our User Experience study, please jump to [User Experience Participant Exercises](#user-experience-participant-exercises)
-
-## Exercises for those not participating in the User Experience study. 
-
-We've provided three main exercises, but we realize that it is possible that some will not be able to complete all three. We are interested in your feedback regardless of how far you get. Please answer our [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu) when you are done.
-
-### Exercise One 
-*Try out the Akka Serverless console*
-
-_First we’ll focus on the developer experience of the Akka Serverless Console. All of the tasks can be done through your web browser._
-
-Imagine that you’re a developer working for ACME Sunglasses. Your team has built a few services that you need to deploy. A colleague has invited you to join his Akka Serverless Project.
+Thank you for participating in the Akka Serverless Private Beta! We want Akka Serverless to be easy to learn and use. We realize that your time is valuable. To help you get the most out of working with Akka Serverless, we’ve created some “_Getting Started Exercises_”. You can either do these exercises on your own and provide us feedback using a [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu) or you can follow the interactive route using Paircast. Each of the exercises below has a "_Record Paircast_" button that will walk you through the same exercise, but recording it using [Paircast](https://paircast.io).
 
 
-1. Follow the link in the email invitation to log into Akka Serverless Console.
-2. Click on the project and a tutorial will guide you through deployment of a shopping cart service. At the end it will provide a link to a UI you can use to connect to the service.
-3. [Open the UI in a new tab](https://static.akkaserverless.com/js-shopping-cart/index.html) connect it to the new service using the hostname of the route you exposed. 
-4. In the UI, enter a user name and add and remove items from the cart.
-5. View the log.
+### Akka Serverless :: Console
+
+<a href="https://app.paircast.io/intro?key=fce7be36-e30a-4078-8471-58ec2dacc8d4"><img src="https://app.paircast.io/images/share-your-build.png" alt="Share with Paircast"></a>
+
+For this exercise, imagine that you’re a developer working for ACME Sunglasses. Your team has built a few services that you need to deploy. A colleague has invited you to join his Akka Serverless Project. We'd like you to deploy a shopping cart service. You can do that in two ways:
+
+1. Using the tutorial in the Akka Serverless Console
+2. Deploy a new service yourself(you can use `lightbend-docker-registry.bintray.io/cloudstate-samples/shopping-cart-javascript` as the docker container)
+
+In both cases, the goal is to make the image publicly available (public endpoint), connect it to the [static frontend](https://static.akkaserverless.com/js-shopping-cart/index.html), and see the logs after putting some sunglasses in your cart.
 
 
-### Exercise Two
-*Try out the Akka Serverless Command Line Interface (CLI)*
+### Akka Serverless :: CLI
 
-_Next, we’ll focus on the developer experience of the Akka Serverless `akkasls` CLI. All the tasks can be done using the CLI._
+<a href="https://app.paircast.io/intro?key=b8ddf958-622f-4340-a4e6-04f775066869"><img src="https://app.paircast.io/images/share-your-build.png" alt="Share with Paircast"></a>
 
-As a developer working for ACME Sunglasses, your team has built a different shopping cart service that you need to deploy. 
+For this exercise, imagine that you’re a developer working for ACME Sunglasses. Your team has built a few services that you need to deploy. A colleague has invited you to join his Akka Serverless Project. We'd like you to deploy a warehouse inventory service using the CLI. The steps you'll need to follow are:
 
-
-1. Install the CLI as described at: https://developer.lightbend.com/docs/akka-serverless/getting-started/set-up-development-env.html.
-2. Using the previous project, deploy the new service from this container image on Docker Hub: https://hub.docker.com/r/retgits/acmesunglasses-warehouse/tags?page=1&ordering=last_updated, make sure that the service will be exposed for internet access and enable Cross-Origin Resource Sharing(CORS).
-3. Update the container with a new version from this container image: `docker.io/retgits/acmesunglasses-warehouse:2.0.0` 
-4. Add environment variables.
-4. Check whether the service has started.
-5. View the log.
+* Download and install the Akka Serverless CLI
+* Deploy the warehouse inventory service (you can use the container image `docker.io/retgits/acmesunglasses-warehouse:2.0.0`) with an environment variable called `MSG` (you can choose the value for it yourself)
+* Check whether the service has started and view the logs
 
 
-### Exercise Three
-*Building Apps to deploy on Akka Serverless*
+### Akka Serverless :: Building Apps in Java
 
-_Finally, we’ll focus on building applications. The tasks will cover using your preferred IDE, Docker, and either the Akka Serverless Console or the Akka Serverless CLI._
+<a href="https://app.paircast.io/intro?key=7fee1872-2e8f-41e1-859f-f3afe3b4b582"><img src="https://app.paircast.io/images/share-your-build.png" alt="Share with Paircast"></a>
 
-Imagine that you have transferred to ACME Wireless, the parent company of ACME Sunglasses. Your team has been tasked with building and deploying a wireless mesh app on Akka Serverless. To build and deploy the app, you can choose:
+For this exercise, imagine that you've transferred to ACME Wireless (part of the same group of companies as ACME Sunglasses). Your team has been tasked with building and deploying a wireless mesh app on Akka Serverless using Java. We would like you to:
 
+* Follow the README in the [GitHub repository](https://github.com/lightbend-labs/akkaserverless-wirelessmesh-java) to build and deploy the application to Akka Serverless (to deploy the application you can use the Akka Serverless Console or CLI)
+* Modify the `AssignRoom` rpc method, which now returns an empty response, to return the incoming message
 
-*   [The Java version of the application](https://github.com/lightbend-labs/akkaserverless-wirelessmesh-java)
-*   [The JavaScript version of the application](https://github.com/lightbend-labs/akkaserverless-wirelessmesh-javascript) 
+The documentation of how this example application was built is available [here](https://developer.lightbend.com/docs/akka-serverless/tutorial/iotexample-learn.html)
 
-1. Follow the README in the repository of your choice to build the container (_you can skip the step for Google Cloud Pub/Sub_). You can deploy using the Console or the CLI.
+### Akka Serverless :: Building Apps in JavaScript
 
-2. Follow the documentation to learn about the main functionality of the Java example: https://developer.lightbend.com/docs/akka-serverless/tutorial/iotexample-learn.html
+<a href="https://app.paircast.io/intro?key=6425fdaf-2265-4c81-9d05-8d27baa6c5ba"><img src="https://app.paircast.io/images/share-your-build.png" alt="Share with Paircast"></a>
 
-3. Modify the example. The `AssignRoom` rpc method returns an empty response. Change it to return the incoming message. 
+For this exercise, imagine that you've transferred to ACME Wireless (part of the same group of companies as ACME Sunglasses). Your team has been tasked with building and deploying a wireless mesh app on Akka Serverless using Node.js. We would like you to:
 
-Thank you, please do not forget to fill out the [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu).
+* Follow the README in the [GitHub repository](https://github.com/lightbend-labs/akkaserverless-wirelessmesh-javascript) to build and deploy the application to Akka Serverless (to deploy the application you can use the Akka Serverless Console or CLI)
+* Modify the `AssignRoom` rpc method, which now returns an empty response, to return the incoming message
 
-
-## User Experience Participant Exercises
-
-Our team will walk you through these exercises. Feel free to think out loud and so that we see your first impression. Remember we are testing Akka Serverless, not you, so any problem you encounter is welcome and valuable to us.
-
-### Exercise A 
-*Working with projects and services*
-
-An Akka Serverless project is a collection of services and configuration that comprise your application. Each Akka Serverless project runs in its own Kubernetes namespace. Projects support team collaboration: Multiple people can work on a single project, and each person can be a member of many projects.
-
-For your first task, log in to Akka Serverless. You will need to create an account if you don't have one.
-
-1. Create a new project. After we approve it, you will receive an email confirmation.
-2. Click the approved project. A tutorial will guide you through deployment of a shopping cart service. Click Finish to dismiss the tutorial for now. 
-2. Add a new member to your project so that you can collaborate. We’ll provide you with an email address for the invitee. 
-3. Your newly invited colleague has created a new version of the shopping cart and published it at: https://hub.docker.com/r/retgits/acmesunglasses-warehouse/tags?page=1&ordering=last_updated. Redeploy the service and add an environment variable to it.
-4. Suppose that your company decides to use a private Docker Hub account to store container images. How would you go about making sure you can deploy a container from a private registry?
-
-### Exercise B
-*Learning about development*
-
-Imagine that you are a JavaScript developer joining the team that created the shopping cart. The team has documented how they created the service. Follow their directions: [https://docs.lbcs.dev/tutorial/shopping-cart-node.html](https://docs.lbcs.dev/tutorial/shopping-cart-node.html)
-
-Note: We know that we have limited time, so you will likely not finish during the screen share.
-
-If you have time and the desire, feel free to try [Exercise Two](#exercise-two) and [Exercise Three](#exercise-three). If you are able to work with Akka Serverless more, please  fill out the [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu).
+The documentation of how this example application was built is available [here](https://developer.lightbend.com/docs/akka-serverless/tutorial/iotexample-learn.html)
