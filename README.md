@@ -10,7 +10,7 @@ Thank you for participating in the Akka Serverless Private Beta! We want Akka Se
 For this exercise, imagine that you’re a developer working for ACME Sunglasses. Your team has built a few services that you need to deploy. A colleague has invited you to join his Akka Serverless Project. We'd like you to deploy a shopping cart service. You can do that in two ways:
 
 1. Using the tutorial in the Akka Serverless Console
-2. Deploy a new service yourself(you can use `lightbend-docker-registry.bintray.io/cloudstate-samples/shopping-cart-javascript` as the docker container)
+2. Deploy a new service yourself(you can use `gcr.io/akkaserverless-public/samples-js-shoppingcart:0.1.0` as the docker container)
 
 In both cases, the goal is to make the image publicly available (public endpoint), connect it to the [static frontend](https://static.akkaserverless.com/js-shopping-cart/index.html), and see the logs after putting some sunglasses in your cart.
 
