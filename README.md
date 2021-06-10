@@ -1,4 +1,4 @@
-# Akka Serverless Beta Exercises
+# Akka Serverless Beta Exercises 
 
 Thank you for participating in the Akka Serverless Private Beta! We want Akka Serverless to be easy to learn and use. We realize that your time is valuable. To help you get the most out of working with Akka Serverless, we’ve created some “_Getting Started Exercises_”. You can either do these exercises on your own and provide us feedback using a [short survey](https://lightbend.qualtrics.com/jfe/form/SV_1CkcF7hvg40BLmu) or you can follow the interactive route using Paircast. Each of the exercises below has a "_Record Paircast_" button that will walk you through the same exercise, but recording it using [Paircast](https://paircast.io).
 
